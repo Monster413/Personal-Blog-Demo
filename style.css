@@ -1,75 +1,104 @@
-/* Global Styles */
+/* Default: Dark Mode */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f7f7f7;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Header */
 header {
-    background: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: #1f1f1f;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
 }
 
-header nav a {
-    color: #ddd;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff;
 }
 
-header nav a:hover {
-    color: white;
+.icon-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s ease;
 }
 
-/* Hero Section */
-.hero {
-    background: #4a90e2;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
+.icon-btn:hover {
+    transform: scale(1.2);
 }
 
-/* Blog Posts */
-.posts {
-    max-width: 900px;
+.container {
+    max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
 .post {
-    background: white;
-    padding: 20px;
+    background: #1c1c1c;
+    padding: 25px;
     margin-bottom: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border: 1px solid #333;
+    transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.post:hover {
+    background: #242424;
+    transform: translateY(-3px);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #ffffff;
 }
 
 .post .date {
-    color: #777;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
 }
 
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #4a90e2;
-    text-decoration: none;
-    font-weight: bold;
+/* Light Mode */
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #222;
 }
 
-.read-more:hover {
-    text-decoration: underline;
+body.light-mode header {
+    background: #ffffff;
+    border-bottom: 2px solid #ccc;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
-    margin-top: 40px;
+body.light-mode header h1 {
+    color: #222;
+}
+
+body.light-mode .icon-btn {
+    color: #000;
+}
+
+body.light-mode .post {
+    background: #ffffff;
+    border: 1px solid #ccc;
+}
+
+body.light-mode .post:hover {
+    background: #f0f0f0;
+}
+
+body.light-mode .post h2 {
+    color: #000;
+}
+
+body.light-mode .post .date {
+    color: #555;
 }
