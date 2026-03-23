@@ -1,76 +1,77 @@
-/* Global Styles */
+/* Global */
 body {
     margin: 0;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
-    background: #05030a;
-    color: #f5e9ff;
+    font-family: "Orbitron", Arial, sans-serif;
+    background: #02040a;
+    color: #d6eaff;
 }
 
 /* Header */
 header {
-    background: radial-gradient(circle at top, #7b2cff, #12001f 60%, #05030a 100%);
-    color: #fdf7ff;
     text-align: center;
     padding: 60px 20px;
-    border-bottom: 1px solid #2a0b4a;
-    box-shadow: 0 0 40px rgba(123, 44, 255, 0.4);
+    background: linear-gradient(180deg, #030712, #02040a);
+    border-bottom: 1px solid #0a1a2f;
+    box-shadow: 0 0 25px rgba(0, 150, 255, 0.3);
 }
 
 header h1 {
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-size: 2.2rem;
+    margin: 0;
+    font-size: 2.6rem;
+    color: #6ecbff;
+    text-shadow: 0 0 12px rgba(0, 150, 255, 0.8);
 }
 
 header .tagline {
+    margin-top: 12px;
     font-size: 1.1rem;
+    color: #9bd7ff;
     opacity: 0.8;
 }
 
-/* Blog Posts Container */
+/* Main Content */
 main {
-    max-width: 800px;
-    margin: 40px auto 60px auto;
+    max-width: 850px;
+    margin: 50px auto;
     padding: 0 20px;
 }
 
-/* Individual Post Card */
+/* Cyberpunk Post Card */
 .post {
-    background: rgba(10, 4, 25, 0.95);
-    padding: 28px;
-    margin-bottom: 28px;
-    border-radius: 16px;
-    border: 1px solid rgba(155, 89, 255, 0.5);
+    background: rgba(5, 10, 20, 0.85);
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    border: 1px solid #0a2a45;
     box-shadow:
-        0 0 25px rgba(123, 44, 255, 0.35),
-        0 0 4px rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(6px);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        0 0 20px rgba(0, 150, 255, 0.25),
+        inset 0 0 10px rgba(0, 150, 255, 0.1);
+    backdrop-filter: blur(4px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .post:hover {
     transform: translateY(-4px);
+    border-color: #1e90ff;
     box-shadow:
-        0 0 35px rgba(186, 85, 255, 0.6),
-        0 0 8px rgba(255, 255, 255, 0.08);
-    border-color: rgba(200, 120, 255, 0.9);
+        0 0 30px rgba(0, 150, 255, 0.45),
+        inset 0 0 14px rgba(0, 150, 255, 0.2);
 }
 
 .post h2 {
     margin-top: 0;
-    margin-bottom: 8px;
-    color: #ffffff;
-    font-size: 1.6rem;
+    color: #aee4ff;
+    text-shadow: 0 0 8px rgba(0, 150, 255, 0.7);
 }
 
-/* Date Text */
+/* Date */
 .date {
-    color: #b08cff;
+    color: #6bbcff;
     font-size: 0.9rem;
     margin-bottom: 18px;
 }
 
-/* Body Text */
+/* Text */
 .post p {
     line-height: 1.6;
 }
@@ -79,30 +80,27 @@ main {
 .read-more {
     display: inline-block;
     margin-top: 18px;
-    color: #e28bff;
-    font-weight: 600;
+    color: #6ecbff;
+    font-weight: bold;
     text-decoration: none;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    padding-bottom: 2px;
+    letter-spacing: 0.05em;
     border-bottom: 1px solid transparent;
     transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
 }
 
 .read-more:hover {
     color: #ffffff;
-    border-color: #e28bff;
-    text-shadow: 0 0 8px rgba(226, 139, 255, 0.9);
+    border-color: #6ecbff;
+    text-shadow: 0 0 10px rgba(0, 150, 255, 1);
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 25px;
-    background: #07020f;
-    color: #9b7fd4;
-    border-top: 1px solid #2a0b4a;
-    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.7);
-    font-size: 0.9rem;
+    padding: 30px;
+    background: #02040a;
+    color: #6bbcff;
+    border-top: 1px solid #0a1a2f;
+    margin-top: 60px;
+    box-shadow: 0 -10px 25px rgba(0, 150, 255, 0.15);
 }
