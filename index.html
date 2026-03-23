@@ -3,60 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dark Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <header>
         <h1>My Personal Blog</h1>
-        <button id="theme-toggle" class="icon-btn">🌙</button>
+        <p class="tagline">Thoughts, stories, and ideas</p>
     </header>
 
-    <div class="container">
-
-        <div class="post">
-            <h2>First Blog Post</h2>
-            <div class="date">Posted on March 23, 2026</div>
+    <main>
+        <article class="post">
+            <h2>My First Blog Post</h2>
+            <p class="date">March 23, 2026</p>
             <p>
-                Welcome to my new blog. This is where I’ll share thoughts, ideas, and anything else that inspires me.
+                Welcome to my blog! This is where I’ll share my thoughts, projects, and anything else I find interesting. 
+                Stay tuned for more updates as I continue building this space.
             </p>
-        </div>
+            <a class="read-more" href="#">Read more</a>
+        </article>
 
-        <div class="post">
-            <h2>Another Update</h2>
-            <div class="date">Posted on March 20, 2026</div>
+        <article class="post">
+            <h2>Why I Started Blogging</h2>
+            <p class="date">March 20, 2026</p>
             <p>
-                Today I started working on a new project. It’s exciting to see how quickly things come together.
+                Blogging gives me a place to express myself and connect with others. 
+                It’s a creative outlet and a way to document my journey.
             </p>
-        </div>
+            <a class="read-more" href="#">Read more</a>
+        </article>
+    </main>
 
-        <div class="post">
-            <h2>Future Plans</h2>
-            <div class="date">Posted on March 15, 2026</div>
-            <p>
-                I’m planning to expand this blog with categories, tags, and maybe even a comment section.
-            </p>
-        </div>
-
-    </div>
-
-    <script>
-        const toggleBtn = document.getElementById("theme-toggle");
-        const body = document.body;
-
-        toggleBtn.addEventListener("click", () => {
-            body.classList.toggle("light-mode");
-
-            // Switch icon
-            if (body.classList.contains("light-mode")) {
-                toggleBtn.textContent = "☀️";
-            } else {
-                toggleBtn.textContent = "🌙";
-            }
-        });
-    </script>
+    <footer>
+        <p>© 2026 My Personal Blog — All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
+
