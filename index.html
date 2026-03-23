@@ -3,54 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Blog</title>
+    <title>My Dark Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
         <h1>My Personal Blog</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Posts</a>
-            <a href="#">Contact</a>
-        </nav>
+        <button id="theme-toggle" class="icon-btn">🌙</button>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to My Space on the Web</h2>
-        <p>I write about life, creativity, and the things that inspire me.</p>
-    </section>
+    <div class="container">
 
-    <main class="posts">
+        <div class="post">
+            <h2>First Blog Post</h2>
+            <div class="date">Posted on March 23, 2026</div>
+            <p>
+                Welcome to my new blog. This is where I’ll share thoughts, ideas, and anything else that inspires me.
+            </p>
+        </div>
 
-        <article class="post">
-            <h3>My First Blog Post</h3>
-            <p class="date">March 23, 2026</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel sapien vel dui aliquet tincidunt...</p>
-            <a class="read-more" href="#">Read more</a>
-        </article>
+        <div class="post">
+            <h2>Another Update</h2>
+            <div class="date">Posted on March 20, 2026</div>
+            <p>
+                Today I started working on a new project. It’s exciting to see how quickly things come together.
+            </p>
+        </div>
 
-        <article class="post">
-            <h3>Thoughts on Creativity</h3>
-            <p class="date">March 10, 2026</p>
-            <p>Curabitur non urna vitae elit fringilla pharetra. Suspendisse potenti. Integer ac lorem vel arcu...</p>
-            <a class="read-more" href="#">Read more</a>
-        </article>
+        <div class="post">
+            <h2>Future Plans</h2>
+            <div class="date">Posted on March 15, 2026</div>
+            <p>
+                I’m planning to expand this blog with categories, tags, and maybe even a comment section.
+            </p>
+        </div>
 
-        <article class="post">
-            <h3>Why I Started This Blog</h3>
-            <p class="date">February 28, 2026</p>
-            <p>Aliquam erat volutpat. Sed sit amet urna non justo tincidunt bibendum. Donec id lorem nec...</p>
-            <a class="read-more" href="#">Read more</a>
-        </article>
+    </div>
 
-    </main>
+    <script>
+        const toggleBtn = document.getElementById("theme-toggle");
+        const body = document.body;
 
-    <footer>
-        <p>© 2026 My Personal Blog — All rights reserved.</p>
-    </footer>
+        toggleBtn.addEventListener("click", () => {
+            body.classList.toggle("light-mode");
+
+            // Switch icon
+            if (body.classList.contains("light-mode")) {
+                toggleBtn.textContent = "☀️";
+            } else {
+                toggleBtn.textContent = "🌙";
+            }
+        });
+    </script>
 
 </body>
 </html>
