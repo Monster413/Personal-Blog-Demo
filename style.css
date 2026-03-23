@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: #4a90e2;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Blog Posts */
+.posts {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.post .date {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
